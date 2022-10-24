@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bunker"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-13 04:25:19 PM"/>
+        <attribute name="created" value="QnVua2VyO0RFU0tUT1AtUzY1TkkySTsyMDIxLTEyLTEzOzA0OjExOjIzIFBNOzI5Mjk="/>
+        <attribute name="edited" value="QnVua2VyO0RFU0tUT1AtUzY1TkkySTsyMDIxLTEyLTEzOzA0OjI1OjE5IFBNOzE7MzA0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="Sc1" type="Real" array="False" size=""/>
+            <declare name="Sc2" type="Real" array="False" size=""/>
+            <declare name="avage" type="Real" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <output expression="&quot;Do you want to continue? Yes or No &quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response=&quot;Yes&quot;">
+                <output expression="&quot;Please enter the last name&quot;" newline="True"/>
+                <input variable="name"/>
+                <output expression="&quot;Please enter exam score 1 &quot;" newline="True"/>
+                <input variable="Sc1"/>
+                <output expression="&quot;Enter exam score 2&quot;" newline="True"/>
+                <input variable="Sc2"/>
+                <assign variable="avage" expression="(Sc1 + Sc2)/2"/>
+                <output expression="&quot;Name: &quot; &amp; name" newline="True"/>
+                <output expression="&quot;The exam score 1: &quot; &amp; Sc1" newline="True"/>
+                <output expression="&quot;Score 2 : &quot; &amp; Sc2" newline="True"/>
+                <output expression="&quot;The average exam score : &quot; &amp; avage" newline="True"/>
+                <output expression="&quot;Do you want to continue? Yes or No &quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
